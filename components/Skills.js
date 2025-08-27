@@ -5,26 +5,62 @@ import { motion } from 'framer-motion';
  * developer is proficient in. Each item fades into view as the user scrolls.
  */
 export default function Skills() {
-  const skills = [
-    'Kotlin',
-    'Android',
-    'Jetpack Compose',
-    'Retrofit',
-    'OkHttp',
-    'Gradle',
-    'Java',
-    'Git',
-    'Design Patterns',
-    'MVVM/MVI',
-    'Room',
-    'Mockito',
-    'High‑Level Design (HLD)',
-    'Android Architecture Components',
-    'Glide',
-    'Data Binding',
-    'Modularisation',
-    'JUnit'
-  ];
+  /*
+skills
+------------------------
+-Java
+-Kotlin
+-git
+-flutter
+-Dagger
+-cursor
+-Room
+-MVVM
+-MVI
+-TDD
+-JUnit
+-Mockito
+-JetpackCompose
+-KMM
+-Firebase CF
+-Gradle
+-Android
+-Agentic Ai
+-RAG
+-Vector Databse
+-App Modularization
+-NDK
+-c++
+-Kotlin DSL
+-python
+
+  */
+ const skills = [
+  'Java',
+  'Kotlin',
+  'git',
+  'flutter',
+  'DI - Dagger',
+  'Cursor',
+  'Room',
+  'MVVM',
+  'MVI',
+  'TDD',
+  'JUnit',
+  'Mockito',
+  'JetpackCompose',
+  'KMM',
+  'Firebase CF',
+  'Gradle',
+  'Android',
+  'Agentic Ai',
+  'RAG',
+  'Vector Databse',
+  'App Modularization',
+  'NDK',
+  'Kotlin DSL',
+  'Python',
+ ]
   return (
     <section id="skills" className="py-10 bg-gray-50 dark:bg-[#0b1020] px-4">
       <div className="max-w-5xl mx-auto">

@@ -9,7 +9,7 @@ import Image from 'next/image';
  */
 export default function Hero() {
   return (
-    <section id="hero" className="relative py-18 text-center bg-white dark:bg-[#0b1020]">
+    <section id="hero" className="relative pt-24 pb-18 text-center bg-white dark:bg-[#0b1020]">
       <div className="absolute inset-0 -z-10 hidden dark:block">
         <div className="absolute left-1/3 top-10 w-72 h-72 bg-neon-600/20 blur-3xl rounded-full" />
         <div className="absolute right-1/4 bottom-10 w-72 h-72 bg-primary-600/20 blur-3xl rounded-full" />

@@ -9,13 +9,13 @@ import Image from 'next/image';
  */
 export default function Hero() {
   return (
-    <section id="hero" className="relative py-20 text-center bg-white dark:bg-[#0b1020]">
+    <section id="hero" className="relative py-18 text-center bg-white dark:bg-[#0b1020]">
       <div className="absolute inset-0 -z-10 hidden dark:block">
         <div className="absolute left-1/3 top-10 w-72 h-72 bg-neon-600/20 blur-3xl rounded-full" />
         <div className="absolute right-1/4 bottom-10 w-72 h-72 bg-primary-600/20 blur-3xl rounded-full" />
       </div>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

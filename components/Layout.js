@@ -27,12 +27,19 @@ export default function Layout({ children }) {
       <header className="sticky top-0 z-50 bg-white/70 dark:bg-[#0b1020]/60 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-md">
         <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
           <div className="flex items-center space-x-3">
-            <svg className="w-8 h-8 text-green-600" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M3 18v1a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1M3 18h18M3 18l2.5-2.5M21 18l-2.5-2.5M3 6V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1M3 6h18M3 6l2.5 2.5M21 6l-2.5 2.5M9 9h.01M15 9h.01M9 13h6M9 17h6"/>
-            </svg>
-            <svg className="w-8 h-8 text-blue-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
+            {/* Android Logo - Light/Dark Mode */}
+            {isDark ? (
+              <img src="/images/android_logo_dark.svg" alt="Android" className="w-8 h-8" />
+            ) : (
+              <img src="/images/android_logo_light.svg" alt="Android" className="w-8 h-8" />
+            )}
+            
+            {/* Flutter Logo - Light/Dark Mode */}
+            {isDark ? (
+              <img src="/images/flutter_logo_dark.svg" alt="Flutter" className="w-8 h-8" />
+            ) : (
+              <img src="/images/flutter_logo_light.svg" alt="Flutter" className="w-8 h-8" />
+            )}
           </div>
           <nav className="hidden md:flex space-x-6 text-sm">
             <a href="#about" className="hover:text-primary-600 dark:hover:text-neon-500">About</a>

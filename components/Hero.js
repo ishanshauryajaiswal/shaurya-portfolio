@@ -23,7 +23,7 @@ export default function Hero() {
         >
           <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden ring-2 ring-primary-500/40 dark:ring-neon-600/40 bg-white/70 dark:bg-white/5 backdrop-blur">
             <Image
-              src="/images/me.png"
+              src="/images/profile-placeholder.png"
               alt="Profile photo of Shaurya Jaiswal"
               width={512}
               height={512}

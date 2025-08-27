@@ -14,7 +14,7 @@ export default function Hero() {
         <div className="absolute left-1/3 top-10 w-72 h-72 bg-neon-600/20 blur-3xl rounded-full" />
         <div className="absolute right-1/4 bottom-10 w-72 h-72 bg-primary-600/20 blur-3xl rounded-full" />
       </div>
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

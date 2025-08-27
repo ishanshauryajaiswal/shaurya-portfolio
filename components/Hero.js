@@ -48,9 +48,9 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex justify-center md:justify-end"
+            className="hidden md:flex md:justify-end"
           >
-            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-2 ring-primary-500/40 dark:ring-neon-600/40 bg-white/70 dark:bg-white/5 backdrop-blur">
+            <div className="relative w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden ring-2 ring-primary-500/40 dark:ring-neon-600/40 bg-white/70 dark:bg-white/5 backdrop-blur">
               <Image
                 src="/images/me.png"
                 alt="Profile photo of Shaurya Jaiswal"

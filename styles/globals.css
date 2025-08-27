@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for the portfolio
+ *
+ * This file contains custom CSS rules that apply across the entire site. Use
+ * this space sparingly—Tailwind's utility classes should be sufficient for
+ * most styling needs. However, some base adjustments (such as the scroll
+ * behavior) are defined here.
+ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* When using Framer Motion animations it can be helpful to set
+ * overflow-x hidden on the body to prevent horizontal scrollbars from
+ * appearing during animations.
+ */
+body {
+  overflow-x: hidden;
+}

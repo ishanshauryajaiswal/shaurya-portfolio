@@ -25,7 +25,7 @@ export default function Layout({ children }) {
     <div className="flex flex-col min-h-screen bg-white text-gray-900 dark:bg-[#0b1020] dark:text-gray-100">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white/70 dark:bg-[#0b1020]/60 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-md">
-        <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+        <div className="max-w-4xl mx-auto flex justify-between items-center px-4 py-4">
           <div className="flex items-center space-x-3">
             {/* Android Logo - Light/Dark Mode */}
             {isDark ? (

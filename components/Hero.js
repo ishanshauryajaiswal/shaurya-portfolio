@@ -42,6 +42,11 @@ export default function Hero() {
           <div>
             <a
               href="#contact"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById('contact');
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
               className="inline-block border border-gray-300 dark:border-white/10 hover:border-gray-400 dark:hover:border-neon-500 text-gray-800 dark:text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-200 bg-white/60 dark:bg-white/5 backdrop-blur"
             >
               Get in Touch

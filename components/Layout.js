@@ -35,7 +35,7 @@ export default function Layout({ children }) {
             <a href="#contact" className="hover:text-primary-600 dark:hover:text-neon-500">Contact</a>
           </nav>
           <button
-            className="hidden md:inline-flex items-center justify-center w-10 h-10 rounded-lg border border-gray-200 dark:border-white/10 text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 hover:border-gray-300 dark:hover:border-neon-500 transition-all duration-200"
+            className="hidden md:inline-flex items-center justify-center w-10 h-10 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 transition-all duration-200"
             onClick={toggleTheme}
             aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
           >

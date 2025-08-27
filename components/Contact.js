@@ -56,7 +56,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Email</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">shauryajaiswal@example.com</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">shauryajaiswal@live.com</p>
                   </div>
                 </div>
                 
@@ -69,7 +69,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="text-sm font-medium text-gray-900 dark:text-white">Location</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Remote / Worldwide</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Bangalore, India</p>
                   </div>
                 </div>
               </div>

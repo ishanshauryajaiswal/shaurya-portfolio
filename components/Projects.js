@@ -1,28 +1,33 @@
 import { motion } from 'framer-motion';
 
-/**
- * A list of flagship applications the developer has worked on. Each project
- * includes a name, brief description and a link to the corresponding
- * product page. Cards animate into view as the user scrolls.
- */
 export default function Projects() {
   const projects = [
     {
+      name: 'Slice Android',
+      url: 'https://sliceit.com',
+      description:
+        'Led the Android platform team at Slice, India\'s first digital bank. Architected a real-time chatbot using MQTT, enhanced API performance (reducing latency by 19% and raising success rates to 97.3%), automated releases with Slack bots, and built central frameworks improving scalability and developer productivity.',
+    },
+    {
       name: 'PhonePe Android',
       url: 'https://phonepe.com',
-      description: 'Helped architect and develop key modules within the PhonePe app, focusing on merchant listing, modularisation and performance optimisations.',
+      description:
+        'Contributed as Senior Android Developer at PhonePe, India\'s leading payments platform. Built core frameworks (Hurdles, Consent, Yatra, Permission Manager) used across the ecosystem and sister apps. Spearheaded modularisation, reducing redundancy by 13% and shrinking APK size by 5%, while leading CI/CD and code quality initiatives.',
     },
     {
       name: 'Paytm Android',
       url: 'https://paytm.com',
-      description: 'Contributed to the Movies & Events module, leading modularisation efforts and enhancing scalability for millions of users.',
+      description:
+        'Worked on Movies & Events and Merchant-Listing modules in the Paytm app. Designed and launched the Movie-Pass feature from scratch, built the Merchant-Listing module end-to-end, and modularised features for on-demand delivery — reducing app size and improving build times.',
     },
     {
-      name: 'Slice Android',
-      url: 'https://sliceit.com',
-      description: 'Led platform initiatives and frameworks powering the Slice app, enabling seamless mobile payments and enhanced customer experience.',
+      name: 'Newgen Software',
+      url: 'https://newgensoft.com',
+      description:
+        'Developed native enterprise mobile applications, collaborating across teams to deliver scalable business solutions for global clients.',
     },
   ];
+
   return (
     <section id="projects" className="py-16 bg-white dark:bg-[#0b1020] px-4">
       <div className="max-w-5xl mx-auto">
@@ -33,7 +38,7 @@ export default function Projects() {
           viewport={{ once: true }}
           className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-white mb-4"
         >
-          Featured Apps
+          Featured Work
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -42,8 +47,8 @@ export default function Projects() {
           viewport={{ once: true }}
           className="mb-8 text-gray-600 dark:text-gray-300"
         >
-          A selection of consumer‑facing applications I’ve helped build and
-          scale to millions of users.
+          Highlights from my 8+ years building and scaling Android apps used by
+          millions of people.
         </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map((project, idx) => (

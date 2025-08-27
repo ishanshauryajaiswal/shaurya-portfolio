@@ -12,9 +12,11 @@ export default function Experience() {
       company: 'Slice',
       period: 'Apr 2023 – Present',
       details: [
-        'Architected and developed in‑house frameworks to optimise performance and scalability.',
-        'Enhanced CI/CD pipelines, significantly reducing build times and improving release reliability.',
-        'Mentored junior engineers and enforced best practices across the Android platform team.',
+        'Architected and developed a custom in-house chatbot using MQTT protocol for real-time chat capabilities with customer support, improving customer engagement and reducing response times. Built AudioBot on top of this architecture with real time streaming and transcription.',
+        'Refactored the app’s network layer to enhance API performance and enable granular observability of API calls. These optimizations reduced overall latency by 19% and increased API success rates from 92.5% to 97.3%.',
+        'Leading android platform team to build central frameworks that optimize performance, improve scalability, and boost developer productivity. Additionally, enhanced the CI/CD pipeline for faster deployments and streamlined releases.',
+        'Automated release and on-call operations by building a Slack release bot and integrating releases with observability/alerting pipelines to automate runbooks and escalations, cutting MTTR for the mobile app team by 50% and removing manual release toil.',
+        'Developed a comprehensive BFF framework for Android and iOS, enabling backend-driven, configurable UI. Adopted across 30+ new screens, reducing development time for basic screens from days to just hours.',
       ],
     },
     {
@@ -23,9 +25,11 @@ export default function Experience() {
       company: 'PhonePe',
       period: 'Feb 2020 – Jan 2023',
       details: [
-        'Led development of the Merchant Listing module and collaborated closely with backend and design.',
-        'Drove modularisation of the Movies and Events features, resulting in faster build times.',
-        'Implemented architectural improvements and performance optimisations for a smoother user experience.',
+        'Led feature development in multiple pods at PhonePe, collaborating closely with product, backend, and design teams to ship customer-centric features, enabling new business use cases.',
+        'Worked in the core pod. Implemented multiple frameworks used across the PhonePe ecosystem. Designed and built scalable robust frameworks from scratch like Hurdles, Consent and Yatra framework which were externalized as libraries and integrated with other sister apps.',
+        'Designed and implemented multiple frameworks from scratch. Built the permission framework for the Phonepe app which manages all android runtime permissions at a central place. Externalized this framework to enable integration with Phonepe’s sister apps.',
+        'Worked on modularising our app code base and enabling multi-module integration in our app. Created a base framework module that reduced code redundancy by 13% and helped shrink the APK size by 5%.',
+        'Spearheaded CI/CD and code-quality initiatives by integrating static analysis (Detekt) and test-coverage tooling (JaCoCo), and implementing GitHub Actions workflows to enforce PR gates, auto-generate builds and coverage reports — improving code quality and reducing manual review overhead.',
       ],
     },
     {
@@ -34,9 +38,9 @@ export default function Experience() {
       company: 'Paytm',
       period: 'Sep 2018 – Feb 2020',
       details: [
-        'Designed and implemented scalable solutions focusing on performance and user experience.',
-        'Improved platform responsiveness through architectural enhancements.',
-        'Ensured seamless integration with backend services and adhered to agile processes.',
+        'Worked in the Movies and Events module of the Paytm app. Implement new features and flows in our module. Designed and implemented the Movie-Pass feature from scratch.',
+        'Led the development of the Merchant-Listing module in the Paytm app. Worked with backend, product, and design teams to make this module from scratch and bring it live on production.',
+        'Worked on modularization of the movies and merchant listing module in the Paytm app, enabling dynamic delivery of both modules to enable on-demand module installation on consumer’s device. Modularizing the code to reduce app size and build time.',
       ],
     },
     {
@@ -45,8 +49,7 @@ export default function Experience() {
       company: 'Newgen Software',
       period: 'Jan 2017 – Sep 2018',
       details: [
-        'Built and maintained feature‑rich native Android applications addressing key business needs.',
-        'Collaborated with cross‑functional teams to deliver intuitive mobile experiences.',
+        'Worked together with multiple teams to build native mobile applications which provide solutions to their business problems.',
       ],
     },
   ];

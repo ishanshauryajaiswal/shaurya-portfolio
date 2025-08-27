@@ -15,12 +15,12 @@ export default function Hero() {
         <div className="absolute right-1/4 bottom-10 w-72 h-72 bg-primary-600/20 blur-3xl rounded-full" />
       </div>
       <div className="max-w-4xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="order-2 md:order-1 text-left"
+            className="text-left"
           >
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
@@ -48,7 +48,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="order-1 md:order-2 flex justify-center md:justify-end"
+            className="flex justify-center md:justify-end"
           >
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-2 ring-primary-500/40 dark:ring-neon-600/40 bg-white/70 dark:bg-white/5 backdrop-blur">
               <Image

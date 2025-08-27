@@ -24,14 +24,14 @@ export default function Projects() {
     },
   ];
   return (
-    <section id="projects" className="py-16 bg-white px-4">
+    <section id="projects" className="py-16 bg-white dark:bg-[#0b1020] px-4">
       <div className="max-w-5xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-semibold text-gray-800 mb-4"
+          className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-white mb-4"
         >
           Featured Apps
         </motion.h2>
@@ -40,7 +40,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
-          className="mb-8 text-gray-600"
+          className="mb-8 text-gray-600 dark:text-gray-300"
         >
           A selection of consumer‑facing applications I’ve helped build and
           scale to millions of users.
@@ -53,13 +53,13 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-50 p-6 rounded-lg shadow hover:shadow-md transition-shadow h-full flex flex-col justify-between"
+              className="p-6 rounded-lg h-full flex flex-col justify-between bg-gray-50 dark:bg-white/5 backdrop-blur border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-shadow"
             >
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-primary-700">
+                <h3 className="text-xl font-semibold mb-2 text-primary-700 dark:text-neon-500">
                   {project.name}
                 </h3>
-                <p className="text-sm text-gray-700 mb-4">
+                <p className="text-sm text-gray-700 dark:text-gray-300 mb-4">
                   {project.description}
                 </p>
               </div>
@@ -67,7 +67,7 @@ export default function Projects() {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-block text-primary-600 hover:underline text-sm font-medium"
+                className="mt-auto inline-block text-primary-600 dark:text-neon-500 hover:underline text-sm font-medium"
               >
                 Visit Site &rarr;
               </a>

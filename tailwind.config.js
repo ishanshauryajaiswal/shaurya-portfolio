@@ -8,6 +8,7 @@
  * with custom colors, spacing or fonts to suit your personal style.
  */
 module.exports = {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
@@ -27,6 +28,12 @@ module.exports = {
           700: '#4338ca',
           800: '#3730a3',
           900: '#312e81',
+        }
+        ,
+        neon: {
+          400: '#7dd3fc',
+          500: '#22d3ee',
+          600: '#06b6d4'
         }
       },
       fontFamily: {

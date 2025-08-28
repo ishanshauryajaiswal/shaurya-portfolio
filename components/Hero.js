@@ -9,41 +9,47 @@ import Image from 'next/image';
  */
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative h-[80vh] flex items-center justify-center text-center overflow-hidden"
-    >
-      {/* Background image using Next.js Image for optimization */}
-      <Image
-        src="/images/hero-bg.png"
-        alt="Abstract background"
-        layout="fill"
-        objectFit="cover"
-        quality={90}
-        className="absolute inset-0 z-0"
-      />
-      {/* Overlay to darken the image for better text contrast */}
-      <div className="absolute inset-0 bg-black opacity-30"></div>
-      {/* Animated content */}
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="relative z-10 px-4"
-      >
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-          Hello, I'm <span className="text-primary-300">Shaurya Jaiswal</span>
-        </h1>
-        <p className="text-lg md:text-2xl text-gray-200 mb-8">
-          Senior Android Developer & Mobile Architect
-        </p>
-        <a
-          href="#contact"
-          className="inline-block bg-primary-600 hover:bg-primary-700 text-white py-3 px-6 rounded-lg text-sm font-medium transition-colors duration-300"
-        >
-          Get in Touch
-        </a>
-      </motion.div>
+    <section id="hero" className="relative pt-24 pb-18 text-center bg-white dark:bg-[#0b1020]">
+      <div className="absolute inset-0 -z-10 hidden dark:block">
+        <div className="absolute left-1/3 top-10 w-72 h-72 bg-neon-600/20 blur-3xl rounded-full" />
+        <div className="absolute right-1/4 bottom-10 w-72 h-72 bg-primary-600/20 blur-3xl rounded-full" />
+      </div>
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="order-2 md:order-1 text-left"
+          >
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+                Hello, I'm <span className="text-primary-700 dark:text-neon-500">Shaurya Jaiswal</span>
+              </h1>
+              <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300">
+                Senior Android Developer & Mobile Architect
+              </p>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="order-1 md:order-2 flex justify-center md:justify-end"
+          >
+            <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-2 ring-primary-500/40 dark:ring-neon-600/40 bg-white/70 dark:bg-white/5 backdrop-blur">
+              <Image
+                src="/images/me.png"
+                alt="Profile photo of Shaurya Jaiswal"
+                width={512}
+                height={512}
+                priority
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </motion.div>
+        </div>
+      </div>
     </section>
   );
 }
